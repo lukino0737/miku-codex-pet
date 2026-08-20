@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "petId": "miku",
+  "spriteContract": {
+    "version": 1,
+    "columns": 8,
+    "rows": 9,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "gazeDirections": false
+  },
+  "states": [
+    {
+      "state": "idle",
+      "row": 0,
+      "frames": 6,
+      "meaning": "calm idle breathing and blinking",
+      "typicalTriggers": ["idle"]
+    },
+    {
+      "state": "running-right",
+      "row": 1,
+      "frames": 8,
+      "meaning": "move toward screen-right",
+      "typicalTriggers": ["move-right", "drag-right"]
+    },
+    {
+      "state": "running-left",
+      "row": 2,
+      "frames": 8,
+      "meaning": "move toward screen-left",
+      "typicalTriggers": ["move-left", "drag-left"]
+    },
+    {
+      "state": "waving",
+      "row": 3,
+      "frames": 4,
+      "meaning": "friendly wave",
+      "typicalTriggers": ["startup", "interaction"]
+    },
+    {
+      "state": "jumping",
+      "row": 4,
+      "frames": 5,
+      "meaning": "happy head-pat reaction",
+      "typicalTriggers": ["pointer-hover"]
+    },
+    {
+      "state": "failed",
+      "row": 5,
+      "frames": 8,
+      "meaning": "upright panic with attached tears and sweat",
+      "typicalTriggers": ["task-failed"]
+    },
+    {
+      "state": "waiting",
+      "row": 6,
+      "frames": 6,
+      "meaning": "waiting for input or approval",
+      "typicalTriggers": ["input-required", "approval-required"]
+    },
+    {
+      "state": "running",
+      "row": 7,
+      "frames": 6,
+      "meaning": "standing chin-touch thinking loop",
+      "typicalTriggers": ["task-running"]
+    },
+    {
+      "state": "review",
+      "row": 8,
+      "frames": 6,
+      "meaning": "wink and V-sign completion celebration",
+      "typicalTriggers": ["task-completed", "review-completed"]
+    }
+  ]
+}
+
